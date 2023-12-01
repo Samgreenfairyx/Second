@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
+  <!-- Meta tags for character set and viewport configuration -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" type="text/css" href="./mini-challenge.css">
+
+  <!-- Title of the HTML document -->
   <title>My Girly Landing Page</title>
+
+  <!-- Link to external font resources -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap">
 </head>
 
 <body>
+  <!-- Header section containing navigation links aligned to the right -->
   <header>
     <nav class="text-right">
       <ul>
+        <!-- Navigation links with corresponding destinations -->
         <li> <a href="Mini-Challenge.html">Home</a></li>
         <li> <a href="https://github.com/Samgreenfairyx/Second" target="_blank">Github</a></li>
         <li> <a href="coming-soon.html">Portfolio</a></li> <!-- Link to the coming soon page -->
@@ -19,15 +29,36 @@
     </nav>
   </header>
 
+  <!-- Main content section -->
   <main>
+    <!-- Main heading with text centered -->
     <h1 class="text-center">Welcome to My Lovely Website</h1>
+
+    <!-- Figure containing an image and caption, both centered -->
     <figure>
+      <!-- Change image source to a more accessible image -->
       <img src="https://images.unsplash.com/photo-1621193793262-4127d9855c91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cute Girly Image">
       <figcaption class="text-center">Please use the links to explore!.</figcaption>
     </figure>
+  </main>
 
+  <!-- Footer section with text centered -->
   <footer class="text-center">
+    <!-- Copyright information for the year 2023 and website production credits -->
     © 2023 Samantha Green Website Productions
   </footer>
+
+  <!-- Script to apply a hover effect on navigation links -->
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        link.style.color = '#ff0080'; // Change color on hover
+      });
+      link.addEventListener('mouseout', () => {
+        link.style.color = '#ff33cc'; // Restore original color on mouseout
+      });
+    });
+  </script>
 </body>
 </html>
