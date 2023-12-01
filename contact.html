@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
+  <!-- Meta tags for character set and viewport configuration -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" type="text/css" href="./mini-challenge.css">
+
+  <!-- Title of the HTML document -->
   <title>Contact Me - Lovely Website</title>
+
+  <!-- Link to external font resources -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap">
 </head>
 
 <body>
+  <!-- Header section containing navigation links aligned to the right -->
   <header>
     <nav class="text-right">
       <ul>
+        <!-- Navigation links with corresponding destinations -->
         <li> <a href="Mini-Challenge.html">Home</a></li>
         <li> <a href="https://github.com/Samgreenfairyx/Second" target="_blank">Github</a></li>
         <li> <a href="coming-soon.html">Portfolio</a></li>
@@ -19,27 +29,38 @@
     </nav>
   </header>
 
+  <!-- Main content section -->
   <main>
+    <!-- Section for the contact form with a centered heading -->
     <section id="contact">
-        <h2 class="text-center">Get in Touch</h2>
-        <form>
-          <ul>
-            <li>
-              <label class="text-right" for="name">Your Name:</label>
-              <input type="text" id="name" name="user-name">
-            </li>
-            <li>
-              <label class="text-right" for="email">Your Email:</label>
-              <input type="text" id="email" name="user-email">
-            </li>
-            <li>
-              <label class="text-right" for="message">Your Message:</label>
-              <textarea id="message" name="user-message" rows="4"></textarea>
-            </li>
-          </ul>
-          <div class="text-center">
-            <button type="submit">SEND</button>
-          </div>
-        </form>
-      </section>
-      
+      <!-- Update heading to make it more prominent -->
+      <h1 class="text-center">Contact Me</h1>
+
+      <!-- Form for user input with labels, text input, and a textarea -->
+      <form>
+        <ul>
+          <li>
+            <!-- Update label for better accessibility -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="user-name" required>
+          </li>
+          <li>
+            <!-- Update label for better accessibility -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="user-email" required>
+          </li>
+          <li>
+            <!-- Update label for better accessibility -->
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="user-message" rows="4" required></textarea>
+          </li>
+        </ul>
+        <!-- Button to submit the form, styled and centered -->
+        <div class="text-center">
+          <button type="submit">SEND MESSAGE</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
